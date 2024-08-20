@@ -4,28 +4,15 @@
   <title>AutoPlay Settings</title>
   <style>
     body {
-      width: 250px; /* Adjusted width */
-      padding: 15px;
+      width: 250px; /* Increased width for better UI */
+      padding: 10px;
       font-family: Arial, sans-serif;
     }
-    .time-input {
-      width: 60px; /* Adjusted width */
-      margin-right: 5px;
+    input[type="number"] {
+      width: 50px;
     }
     select {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    button {
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #45a049;
+      width: 60px;
     }
   </style>
 </head>
@@ -33,9 +20,9 @@
   <h3>AutoPlay Movie</h3>
   <p>Set the time to auto-play the movie.</p>
   <label for="hour">Hour:</label>
-  <input type="number" id="hour" class="time-input" value="10" min="1" max="12"><br><br>
+  <input type="number" id="hour" value="10" min="1" max="12"><br><br>
   <label for="minute">Minute:</label>
-  <input type="number" id="minute" class="time-input" value="0" min="0" max="59"><br><br>
+  <input type="number" id="minute" value="0" min="0" max="59"><br><br>
   <label for="ampm">AM/PM:</label>
   <select id="ampm">
     <option value="AM">AM</option>
